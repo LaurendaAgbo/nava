@@ -1,0 +1,673 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*****   DEBUT  MAIN     STYLE       *****/
+
+html {
+	height: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+body {
+	height: 100%;
+	font-size: 1rem;
+}
+
+a {
+    -webkit-transition: all 170ms;
+    transition: all 170ms;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+}
+
+.row {
+	margin-right: 0px;
+    margin-left: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.section {
+	margin-bottom: 40px;
+}
+
+/*****     FIN    MAIN     STYLE       *****/
+
+/***** DEBUT HEADER   ****/
+
+#header {
+	background-image: url(images/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	position: relative;
+	width: 100%;
+	height: calc(100% + 152px);
+	min-height: 550px;
+}  
+
+#menu {
+    padding: 2.2rem 0;
+}
+
+#header nav.navbar a.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+}
+
+.btn.btn-outlined {
+    color: #fff;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 15px;
+    padding: 0 35px;
+    min-width: 140px;
+}
+
+.btn.btn-outlined:hover {
+    background: #ffffff;
+    color: #2c3e50;
+}
+
+#heading {
+	position: absolute;
+	/* padding: 300px 0; */
+	transform: translateY(50%);
+	-moz-transform:translateY(50%);
+    -webkit-transform:translateY(50%);
+    -ms-transform:translateY(50%);
+    top: 50%;
+    width: calc(100% - 30px);
+}
+
+#heading h1, #heading p, 
+.parallax-box h1, .parallax-box p {
+    text-transform: uppercase;
+    line-height: 1em;
+    color: #ffffff;
+}
+
+#heading h1, .parallax-box h1 {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 0 15px;
+}
+
+#heading p, .parallax-box p {
+    letter-spacing: 0.04em;
+    font-size: 30px;
+    margin: 0 0 80px;
+}
+/* 
+.destinations-form .input-group {
+    width: 90%;
+}
+ */
+.destinations-form .form-control {
+    width: 100%;
+    height: 60px;
+    border: 0;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    border-radius: 5px;
+    color: #2c3e50;
+}
+
+.destinations-form .form-control:focus, .destinations-form .form-control.has-value {
+    background: #fafafa;
+	border-color: transparent;
+	border-radius: 5px;
+}
+/****	FIN  HEADER   ****/
+
+/***** DEBUT Statistics   ****/
+.statistics-box {
+    padding: 10px 30px;
+    margin-top: -152px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(52, 52, 52, 0.15);
+    box-shadow: 0px 0px 30px 0px rgba(52, 52, 52, 0.15);
+}
+
+.statistics-box .statistics-item {
+    padding: 10px 0;
+}
+
+.statistics-box .statistics-item:not(:last-of-type) {
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.statistics-box .statistics-item .value {
+    font-weight: 700;
+    line-height: 1em;
+    color: #343434;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    margin: 0 0 12.5px;
+}
+
+.statistics-box .statistics-item .title {
+    margin: 0;
+    font-size: 26px;
+    color: #717171;
+    line-height: 1em;
+}
+
+/****	FIN  Statistics   ****/
+
+/***** DEBUT Destinations   ****/
+
+.section-destination {
+	margin-top: 40px;
+}
+
+.section-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 74px;
+}
+
+.section-title .title {
+    line-height: 1em;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    color: #343435;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+	letter-spacing: 0.02em;
+}
+
+.section-title .sub-title {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #717171;
+    margin: 0;
+}
+
+.destination-box:hover img, .boat-box img {
+    backface-visibility: hidden;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-transform: scale(1.045);
+    -ms-transform: scale(1.045);
+    transform: scale(1.045);
+    width: 100%;
+}
+
+.destination-box img, .boat-box:hover img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.destination-box, .boat-box {
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.destination-box .box-cover, .boat-box .box-cover {
+    line-height: 1em;
+    font-size: 0;
+}
+
+.destination-box .boats-qty, .boat-box .boat-price {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 5px;
+    background: #e7434e;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+	    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+}
+
+.destination-box .boats-qty::before, .boat-box .boat-price::before {
+    content: "\f21a";
+    font-family: fontawesome;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.destination-box .box-details, .boat-box .box-details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.destination-box:hover .box-details::before, .boat-box:hover .box-details::before {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.destination-box .box-details::before, .boat-box .box-details::before {
+    content: "";
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: -15px;
+    opacity: 0.65;
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.destination-box .box-meta, .boat-box .box-meta {
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    visibility: hidden;
+    position: relative;
+    opacity: 0;
+    z-index: 2;
+}
+
+.destination-box:hover .box-meta, .boat-box:hover .box-meta {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    visibility: visible;
+    opacity: 1;
+}
+
+.destination-box .box-meta .city, .destination-box .box-meta .country, 
+.boat-box .box-meta .boat-name, .boat-box .box-meta .boat-meta {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    line-height: 1em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.destination-box .box-meta .city, .boat-box .box-meta .boat-name {
+    font-size: 30px;
+    margin: 0 0 7.5px;
+}
+
+.destination-box .box-meta .country {
+    font-size: 20px;
+}
+
+.btn {
+    -webkit-transition: all 225ms ease-in-out;
+    transition: all 225ms ease-in-out;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.btn-load-destination, .btn-load-boats {
+    margin-top: 20px;
+    line-height: 38px;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #343435;
+    letter-spacing: 0.04em;
+    padding: 0 4px;
+}
+
+.btn.btn-load-destination:hover, .btn.btn-load-boats:hover {
+    background: whitesmoke;
+	color: #343435;
+}
+
+
+/****	FIN  Destinations   ****/
+
+/***** Parallax Section  ****/
+.parallax-box {
+    background-image: url(images/rent-boat-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 160px 0;
+    margin-bottom: 100px;
+}
+
+.parallax-box h1 {
+    margin: 0 0 10px;
+}
+
+.btn.btn-special {
+    background: #e7434e;
+    line-height: 60px;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0 40px;
+}
+
+/****	FIN  Parallax Section   ****/
+
+/***** DEBUT Boats Section   ****/
+
+.clean-list {
+    list-style-type: none;
+    letter-spacing: 0em;
+    padding: 0;
+    margin: 0;
+}
+
+.clean-list li {
+    list-style-type: none;
+}
+
+.boat-box .box-meta .boat-meta {
+    font-size: 16px;
+}
+
+.boat-box .box-meta .boat-meta li {
+    display: inline-block;
+}
+
+.boat-box .box-meta .boat-meta li:not(:last-of-type) {
+    margin-right: 25px;
+}
+
+
+
+/****	FIN  Boats Section   ****/
+
+/***** DEBUT Footer   ****/
+
+.main-footer {
+    background-image: url(images/footer-pattern.png);
+    background-repeat: repeat-x;
+    background-color: #404040;
+    padding: 60px 0;
+}
+
+.main-footer .widget .widget-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    line-height: 1em;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+.main-footer .widget ul:not(.social-block) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .widget ul:not(.social-block) li a:hover {
+    color: #e7434e;
+}
+
+.main-footer .widget ul:not(.social-block) li {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    line-height: 1.2em;
+}
+
+.main-footer .widget ul:not(.social-block) li:not(:last-of-type) {
+    margin-bottom: 12.5px;
+}
+
+.social-block li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.social-block li {
+    display: inline-block;
+}
+
+.social-block li i, .social-block li a {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.social-block li i {
+    font-weight: 500;
+    -webkit-transition: inherit;
+    transition: inherit;
+    background: #717171;
+    line-height: 44px;
+    font-size: 18px;
+    color: #fff;
+    height: 44px;
+    width: 44px;
+}
+
+.social-block li i:hover.fa.fa-facebook {
+    background: #3b5998;
+}
+
+.social-block li i:hover.fa.fa-twitter {
+    background: #55acee;
+}
+
+.social-block li i:hover.fa.fa-google-plus {
+    background: #dd4b39;
+}
+
+.subscribe-form {
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.subscribe-form .form-control {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 155px 0 20px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.subscribe-form .btn {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    position: absolute;
+    height: 40px !important;
+    line-height: 40px !important;
+    right: 0;
+    top: 0;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    font-family: "Open Sans", sans-serif !important;
+    letter-spacing: 0.02em;
+    padding: 0 30px !important;
+}
+
+.subscribe-form .btn.btn-default:hover, .btn.btn-special:hover {
+    background: #34495e;
+}
+
+.subscribe-form .btn.btn-default {
+    background-color: #e7434e;
+    color: #fff;
+    border-left: transparent;
+	border-radius: 5px;
+	letter-spacing: 0.04em;
+    text-transform: uppercase;
+	z-index: 3;
+}
+
+
+/****	FIN  Footer   ****/
+
+/****   DEBUT MEDIA QUERIES    ****/
+
+@media screen and (min-width: 578px) {
+	nav.navbar {
+		padding: 0;
+	}
+
+	.section {
+		margin-bottom: 80px;
+	}
+	
+	.destinations-form .input-group {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+	.statistics-box {
+		padding: 30px 10px;
+	}
+	
+	.destinations-form .form-control {
+		padding: 0 240px 0 30px;
+	}
+	
+	.statistics-box .statistics-item .value {
+		font-size: 30px;
+	}
+
+	.statistics-box .statistics-item .title {
+		font-size: 18px;
+	}
+	
+	.section-destination {
+		margin-top: 80px;
+	}
+	
+	.btn-load-destination, .btn-load-boats {
+		margin-top: 40px;
+		line-height: 58px;
+		padding: 0 40px;
+	}
+	
+	
+}
+
+@media screen and (min-width: 578px) and (max-width: 767px) {
+	#header {
+		height: calc(100% + 102px);
+		min-height: 550px;
+	}
+
+	.statistics-box {
+		margin-top: -102px;
+	}
+
+	.statistics-box .statistics-item:nth-child(odd) {
+		border-right: 1px solid #d4d4d4;
+	}
+	
+	.statistics-box .statistics-item:first-child, .statistics-box .statistics-item:nth-child(2) {
+		border-bottom: 1px solid #d4d4d4;
+	}
+	
+	.statistics-box .statistics-item:nth-child(3) {
+		border-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 578px) and (max-width: 991px) {
+	#heading h1, .parallax-box h1 {
+		font-size: 42px;
+	}
+
+	#heading p, .parallax-box p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#header {
+		height: calc(100% + 66px);
+		min-height: 480px;
+	}
+	
+	.statistics-box {
+		margin-top: -66px;
+	}
+
+	.statistics-box .statistics-item:not(:last-of-type) {
+		border-right: 1px solid #d4d4d4;
+		border-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#heading h1, .parallax-box h1 {
+		font-size: 72px;
+	}
+
+	#heading p, .parallax-box p {
+		font-size: 30px;
+	}
+}
+
+/****   FIN MEDIA QUERIES    ****/
