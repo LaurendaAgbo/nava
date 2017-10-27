@@ -525,6 +525,16 @@ img {
     margin-bottom: 35px;
 }
 
+.subscribe-form input[type="text"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 155px 0 20px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
 .subscribe-form .form-control {
     width: 100%;
     height: 40px;
@@ -607,8 +617,6 @@ img {
 		line-height: 58px;
 		padding: 0 40px;
 	}
-	
-	
 }
 
 @media screen and (min-width: 578px) and (max-width: 767px) {
@@ -631,7 +639,7 @@ img {
 	
 	.statistics-box .statistics-item:nth-child(3) {
 		border-bottom: 0;
-	}
+    }
 }
 
 @media screen and (min-width: 578px) and (max-width: 991px) {
@@ -657,7 +665,7 @@ img {
 	.statistics-box .statistics-item:not(:last-of-type) {
 		border-right: 1px solid #d4d4d4;
 		border-bottom: 0;
-	}
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -667,7 +675,7 @@ img {
 
 	#heading p, .parallax-box p {
 		font-size: 30px;
-	}
+    }
 }
 
 /****   FIN MEDIA QUERIES    ****/
