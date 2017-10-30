@@ -469,7 +469,7 @@ color: #343435;
   background-image: url(images/footer-pattern.png);
   background-repeat: repeat-x;
   background-color: #404040;
-  padding: 60px 0;
+  padding: 1rem 0 3rem 0;
 }
 
 .main-footer .widget .widget-title {
@@ -480,6 +480,10 @@ color: #343435;
   line-height: 1em;
   font-size: 0.87rem;
   margin: 0 0 20px;
+}
+
+.main-footer .widget {
+  padding: 3rem 0 0 ;
 }
 
 .main-footer .widget ul:not(.social-block) {
