@@ -51,7 +51,7 @@ img {
 }
 
 .section {
-	margin-bottom: 40px;
+	margin-bottom: 5rem;
 }
 
 /*****     FIN    MAIN     STYLE       *****/
@@ -219,7 +219,7 @@ img {
 /***** DEBUT Destinations   ****/
 
 .section-destination {
-margin-top: 40px;
+margin-top: 5rem;
 }
 
 .section-title {
@@ -230,7 +230,7 @@ margin-top: 40px;
 
 .section-title .title {
   line-height: 1em;
-  font-size: 1.62rem;
+  font-size: 1.87rem;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.04em;
   color: #343435;
@@ -265,7 +265,7 @@ margin-top: 40px;
 
 .destination-box, .boat-box {
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 5rem;
   position: relative;
   border-radius: 5px;
   z-index: 2;
@@ -384,7 +384,6 @@ margin-top: 40px;
 }
 
 .btn-load-destination, .btn-load-boats {
-  margin-top: 20px;
   line-height: 38px;
   border-radius: 5px;
   border: 1px solid #bdbdbd;
@@ -394,7 +393,7 @@ margin-top: 40px;
   text-transform: uppercase;
   color: #343435;
   letter-spacing: 0.04em;
-  padding: 0 4px;
+  padding: 0.5rem 2rem 0.5rem;
 }
 
 .btn.btn-load-destination:hover, .btn.btn-load-boats:hover {
