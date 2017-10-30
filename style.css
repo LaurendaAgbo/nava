@@ -75,6 +75,7 @@ img {
 
 #header nav.navbar a.nav-link {
   color: #fff;
+  text-align: center;  
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
@@ -261,11 +262,12 @@ margin-top: 5rem;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  width: 100%;
 }
 
 .destination-box, .boat-box {
   overflow: hidden;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   position: relative;
   border-radius: 5px;
   z-index: 2;
@@ -606,73 +608,83 @@ color: #343435;
  * ----------------------------------------------------------------------------
  */
 
-/* Extra small devices (portrait phones, less than 34em) */
-@media (max-width: 767px) {
-  #header nav.navbar a.nav-link {
-    text-align: center
-  }
-
-  .btn.btn-special {
-    padding: 0 1rem;
-  }
-
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
   .statistics-content {
-    width: 94%;
-    padding: 0 0 7rem;
-  }
-
-  .statistics-box {
-    padding: 0 2rem 0 2rem;
-  }
-
-  .statistics-item {
-    padding: 2rem 0 0.5rem;
-  }
-
-  .statistics-box .statistics-item:not(:last-of-type) {
-    border-bottom: 1px solid #d4d4d4;
-  }
-
-  .statistics-box .statistics-item:nth-child(3) {
-    border-bottom: none;
-  }
-
-  .btn.btn-outlined {
-    margin: 2rem 8rem 0;
+    padding: 0 0 20rem !important;
   }
 }
 
-/* Medium devices (tablets, less than 62em) */
 @media (min-width: 768px) {
   #heading h1, .parallax-box h1 {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
-
   #heading p, .parallax-box p {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
   }
 
   .statistics-box .statistics-item:not(:last-of-type) {
     border-right: 1px solid #d4d4d4;
   }
-
-  .statistics-content {
-    padding: 0 0 4rem;
-  }
-
   .statistics-box {
     padding: 2rem 0 2rem 0;
   }
 }
 
-/* Large devices (desktops, less than 75em) */
-@media (min-width: 992px) {
-  #heading h1, .parallax-box h1 {
-    font-size: 4.5rem !important;
+@media (max-width: 767px) {
+  .statistics-content {
+    width: 94%;
+    padding: 0 0 7rem;
   }
-
-  #heading p, .parallax-box p {
-    font-size: 1.8rem !important;
+  .statistics-box {
+    padding: 0 2rem 0 2rem;
+  }
+  .statistics-item {
+    padding: 2rem 0 0.5rem;
+  }
+  .statistics-box .statistics-item:not(:last-of-type) {
+    border-bottom: 1px solid #d4d4d4;
+  }
+  
+  .btn.btn-outlined {
+    margin: 2rem 8rem 0;
+  }
+  .btn.btn-special {
+    padding: 0 1rem;
   }
 }
 
+@media (min-width: 992px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .statistics-box .statistics-item:nth-child(3) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width:768px) {
+  .statistics-content {
+    padding: 0 0 4rem;
+  }
+
+  #heading h1, .parallax-box h1 {
+    font-size: 4.5rem;
+  }
+  #heading p, .parallax-box p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
