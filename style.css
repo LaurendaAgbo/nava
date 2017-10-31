@@ -66,14 +66,18 @@ img {
 	position: relative;
 	width: 100%;
 	height: calc(100% + 35vh);
-	min-height: 550px;
+  min-height: 550px;
 }
 
 #menu {
   padding: 2.2rem 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
-#header nav.navbar a.nav-link {
+#menu nav.navbar a.nav-link {
   color: #fff;
   text-align: center;  
   text-transform: uppercase;
@@ -83,7 +87,7 @@ img {
   letter-spacing: 0.04em;
 }
 
-#header nav.navbar a.nav-link:hover {
+#menu nav.navbar a.nav-link:hover {
   color: #e7434e;
 }
 
@@ -109,14 +113,6 @@ img {
 
 #heading {
 	position: absolute;
-	padding: 2rem 0;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  overflow: auto;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 #heading h1,
